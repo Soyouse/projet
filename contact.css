@@ -1,0 +1,214 @@
+.social-links-inline {
+  display: flex;
+  gap: 3px; /* Espacement entre les icônes */
+}
+
+.social-links-inline a img {
+  width: 24px; 
+  height: auto;
+}
+
+/* Formulaire de contact */
+.visible-blue-border {
+  border-color: rgb(38, 49, 102);
+  border-width: 2px;
+  border-style: solid;
+  height: 150vw;
+}
+
+
+/*________________________________________*/
+
+.input-custom {
+  width: 100%;
+  border: 2px solid rgb(38, 49, 102);;
+  border-radius: 0;
+  padding: 0.75vw;
+  box-sizing: border-box;
+  font-size: 1vw;
+  background-color: rgba(38, 49, 102, 0.2); /* Bleu avec transparence */
+  position: relative;
+}
+
+.input-custom::placeholder {
+  color: transparent;
+}
+
+.input-custom:focus::placeholder {
+  color: transparent;
+}
+
+.label-custom {
+  position: absolute;
+  top: 50%;
+  left: 1vw;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+  pointer-events: none;
+  font-size: 3vw;
+  color: rgb(38, 49, 102);
+}
+
+.input-custom:focus + .label-custom,
+.input-custom:not(:placeholder-shown) + .label-custom {
+  top: -1vw;
+  left: 1vw;
+  font-size: 0.8vw;
+  color: rgb(38, 49, 102);;
+  opacity: 0; /* Cache le label lors de la saisie */
+  visibility: hidden; /* Cache le label lors de la saisie */
+}
+
+.button-custom {
+  background-color: rgb(38, 49, 102);;
+  border: none;
+  color: white;
+  padding: 0.75vw 5.5vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1vw;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Remove bottom margin from list items to reduce gap */
+.catamaran-light li {
+  margin-bottom: 0;
+}
+
+/* Spécifique aux inputs "Nom", "Email" et "Sujet" */
+#name, #email, #subject {
+  height: 8vw;
+}
+
+/* Spécifique à l'input "Message" */
+#message {
+  height: 85vw; /* Augmenter l'épaisseur */
+}
+
+/* Text */
+
+.title-font-size-med-xxl {
+  font-size: 5vw;
+}
+
+/* Margin */
+
+.mt-20 {
+  margin-top: 20%;
+}
+
+/* Médias queries pour la version desktop */
+@media only screen and (min-width: 768px) {
+
+  .social-links-inline {
+    display: flex;
+    gap: 3px; /* Espacement entre les icônes */
+  }
+  
+  .social-links-inline a img {
+    width: 24px; 
+    height: auto;
+  }
+  
+  /* Formulaire de contact */
+  .visible-blue-border {
+    border-color: rgb(38, 49, 102);
+    border-width: 2px;
+    border-style: solid;
+    height: 0%;
+  }
+  
+  .input-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-custom {
+    width: 100%;
+    border: 2px solid rgb(38, 49, 102);;
+    border-radius: 0;
+    padding: 0.75vw;
+    box-sizing: border-box;
+    font-size: 1vw;
+    background-color: rgba(38, 49, 102, 0.2);
+    position: relative;
+  }
+  
+  .input-custom::placeholder {
+    color: transparent;
+  }
+  
+  .input-custom:focus::placeholder {
+    color: transparent;
+  }
+  
+  .label-custom {
+    position: absolute;
+    top: 50%;
+    left: 1vw;
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+    pointer-events: none;
+    font-size: 1vw;
+    color: rgb(38, 49, 102);
+  }
+  
+  .input-custom:focus + .label-custom,
+  .input-custom:not(:placeholder-shown) + .label-custom {
+    top: -1vw;
+    left: 1vw;
+    font-size: 0.8vw;
+    color: rgb(38, 49, 102);;
+    opacity: 0; /* Cache le label lors de la saisie */
+    visibility: hidden; /* Cache le label lors de la saisie */
+  }
+  
+  .button-custom {
+    background-color: rgb(38, 49, 102);;
+    border: none;
+    color: white;
+    padding: 0.75vw 5.5vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    cursor: pointer;
+    border-radius: 0;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .catamaran-light li {
+    margin-bottom: 0;
+  }
+  
+  /* Spécifique aux inputs "Nom", "Email" et "Sujet" */
+  #name, #email, #subject {
+    height: 5vw; /* Réduire l'épaisseur */
+  }
+  
+  /* Spécifique à l'input "Message" */
+  #message {
+    height: 25vw; /* Augmenter l'épaisseur */
+  }
+  
+  /* Text */
+  
+  .title-font-size-med-xxl {
+    font-size: 2.5vw;
+  }
+  
+  /* Margin */
+  
+  .mt-20 {
+    margin-top: 20%;
+  }
+}

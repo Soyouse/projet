@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Inter:wght@900&family=Roboto:wght@700&display=swap');
+
+ /* Style global */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+   height: 37vw;
+}
+
+main {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Styles de la navbar */
+.custom-buger-links {
+    text-align: center; /* Centre le texte des liens */
+}
+
+.custom-buger-links a {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc; 
+}
+
+.custom-links a {
+    display: none;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    background-image: url('assets/img/VAGUE_HEADER_TEL_1.png');
+    background-size: cover;
+}
+
+.logo {
+    position: absolute;
+    height: 105%;
+    left: 0;
+}
+
+.offcanvas-end {
+    background-color: #007bff !important;
+}
+
+.custom-linkscustom
+
+.offcanvas-header, .offcanvas-body {
+    color: white !important; 
+}
+
+.social-links {
+    position: absolute;
+    top: 8.5%;
+    right: 14.5%;
+}
+
+.menu-burger {
+    position: absolute;
+    height: 60%;
+    top: 57%;
+    right: 5%;
+}
+
+.social-links a {
+    display: inline-block;
+}
+.social-link-1 img {
+    width: 105% !important;
+    height: auto;
+    margin-left: 0% !important;
+}
+.social-link-2 img {
+    width: 105% !important;
+    height: auto;
+    margin-left: 30% !important;
+}
+.social-link-3 img {
+    width: 110% !important;
+    height: auto;
+    margin-left: 90% !important;
+}
+
+.social-links a img {
+    width: 24px;
+    height: auto;
+}
+
+/* main */
+
+/* Carousel */
+.carousel-indicators [data-bs-target] {
+    width: 10vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.carousel-indicators {
+    bottom: -10px;
+}
+
+/* Text */ 
+
+.title-font-size-ultra-xxl {
+    font-size: 5vw;
+}
+
+.mb-20vw {
+    margin-bottom: 25vw;
+}
+
+.custom-position {
+    margin-top: -32.5vw;
+}
+
+.text-color-p {
+    color: rgb(38, 49, 102)!important;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.text-decoration-color-blue {
+    text-decoration-color: rgb(38, 49, 102);
+}
+
+.catamaran-light {
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.catamaran-bold {
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.catamaran-bold-2 {
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.catamaran-bold-3 {
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+.title-font-size-xxl {
+    font-size: 105%;
+}
+
+.title-font-size-xl {
+    font-size: 100%;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.e-custom-font {
+    font-size: 95%;
+}
+
+.mt-custom-font {
+    font-size: 97.5%;
+}
+
+/* Images */
+.partenaires-img {
+    margin-top: 6vw !important;
+}
+
+.members-img {
+    width: 22vw;
+}
+
+.cs-notre-cap {
+    width: 55%;
+}
+
+.cm-shema {
+    margin-top: 0%;
+}
+
+/* .custom-img-equipage {
+    height: 150% !important;
+} */
+
+.image-container {
+    right: -5.5%;
+    top: 48.5%;
+}
+
+.image-desktop {
+    display: none;
+}
+
+/* footer */
+
+footer {
+    height: 37vw;
+}
+
+.footer-bar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/img/Group_4.png');
+    background-size: cover;
+}
+
+.social-links-footer {
+    position: absolute;
+    bottom: 20%;
+    right: 8%;
+}
+
+.social-links-footer a {
+    display: inline-block;
+    margin-left: 10px; /* Espacement entre les icônes */
+}
+
+.social-links-footer img {
+    width: 24px;
+    height: auto;
+}
+
+.social-link-f1 img {
+    width: 105% !important;
+    height: auto; /* Garde le ratio de l'image */
+}
+.social-link-f2 img {
+    width: 105% !important;
+    height: auto; /* Garde le ratio de l'image */
+}
+.social-link-f3 img {
+    width: 85% !important;
+    height: auto; /* Garde le ratio de l'image */
+    margin-left: 10px !important;
+}
+
+/* Médias queries pour la version desktop */
+
+@media only screen and (min-width: 768px) {
+    /* main size */
+
+    main {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    /* navbar */
+
+    header{
+        height: 12.3vw;
+    }
+
+    .navbar {
+        background-image: url('assets/img/VAGUE_HEADER_1.png');
+        height: 12.3vw;
+    }
+   
+    .logo {
+        top: -1%;
+        left: 12.5%;
+        height: 130%;
+    }
+
+
+    .social-links {
+        bottom: 50%;
+        right: 8.5% !important;
+    }
+
+    .menu-burger {
+        display: none; /* Masquer le menu burger */
+    }
+
+    .social-links a img {
+        width: 3vw; /* Ajuster la taille des icônes pour la version desktop */
+    }
+
+    /* Changement de position des éléments de liens sociaux pour la version desktop */
+    .social-links {
+        top: 10%;
+    }
+
+    .custom-links {
+        position: absolute;
+        bottom: 5%; /* Ajuste en fonction de l'emplacement exact souhaité */
+        right: 0%;
+        display: flex;  
+    }
+
+    .custom-link-1, .custom-link-2, .custom-link-3, .custom-link-4, .custom-link-5 {
+        display: inline-block !important; /* Assure que les liens sont affichés */
+        position: relative; /* Positionnement relatif dans leur conteneur .custom-links */
+        text-decoration: none;
+        color: rgb(26, 31, 66);
+    }
+
+    .custom-link-1 {
+        right: 10vw;
+    }
+
+    .custom-link-2 {
+        right: 8vw;
+    }
+
+    .custom-link-3 {
+        right: 6vw;
+    }
+    .custom-link-4 {
+        right: 4vw;
+    }
+    .custom-link-5 {
+        right: 2vw;
+    }
+
+    /* main */
+    /* caroussel */
+
+    .title-font-size-xxl {
+        font-size: 135%;
+    }
+
+    .title-font-size-xl {
+        font-size: 107%;
+    }
+
+    .col-md-custom-31 {
+        width: 31% ;
+    }
+
+    /* .custom-col-c {
+        flex: 0 0 auto;
+        width: 41.165% !important;
+    } */
+
+    /* .carousel-inner {
+        display: none;
+    } */
+
+    /* text */
+
+    .col-md-custom-ledppm {
+        width: 25.5% !important;
+    }
+
+    .col-md-custom-3 {
+        width: 27% !important;
+    }
+
+    .position-md-relative {
+        position: relative;
+    }
+
+    .position-md-absolute {
+        position: absolute;
+    }
+
+    .col-md-custom {
+        margin-left: 53.8%;
+    }
+    
+    .col-md-custom-1 {
+        width: 52.5% ;
+    }
+
+    .col-md-custom-2 {
+        width: 45% ;
+    }
+
+    /* images */
+
+    
+
+    .custom-position-shema-e {
+        top: 50.5vw;
+        left: 30vw;
+    }
+
+    .margin-map {
+        margin-bottom: 6%;
+    }
+
+    .custom-position {
+        margin-top: -35vw;
+    }
+
+    .custom-larger-image {
+        width: 90%; /* Ajuste ce pourcentage selon tes besoins pour agrandir l'image */
+        max-width: 600px; /* Ou une autre valeur maximale selon tes besoins */
+    }
+
+    .image-mobile {
+        display: none;
+    }
+
+    .image-desktop {
+        display: block;
+    }
+
+    /* Image notre cap */
+
+    .image-container {
+        right: 0%;
+        top: 55%;
+    }
+
+    /* footer */
+
+    footer {
+        height: 12.3vw;
+    }
+
+    .footer-bar {
+        background-image: url('assets/img/VAGUE_HEADER_2.png');
+    }
+
+    .social-links-footer {
+        bottom: 30%;
+    }
+}
+@media only screen and (min-width: 865px) {
+    /* Changement de position des éléments de liens sociaux pour la version desktop */
+    .custom-links {
+        position: absolute;
+        bottom: 5%; /* Ajuste en fonction de l'emplacement exact souhaité */
+        right: 0%;
+        display: flex;  
+    }
+
+    .custom-link-1, .custom-link-2, .custom-link-3, .custom-link-4, .custom-link-5 {
+        display: inline-block !important; /* Assure que les liens sont affichés */
+        position: relative; /* Positionnement relatif dans leur conteneur .custom-links */
+        text-decoration: none;
+        color: rgb(26, 31, 66);
+    }
+
+    .custom-link-1 {
+        right: 18vw;
+    }
+
+    .custom-link-2 {
+        right: 15vw;
+    }
+
+    .custom-link-3 {
+        right: 11vw;
+    }
+    .custom-link-4 {
+        right: 7vw;
+    }
+    .custom-link-5 {
+        right: 3vw;
+    }
+
+    .custom-position {
+        margin-top: -36vw;
+    }
+
+    .custom-position-shema-e {
+        top: 40.5vw;
+        left: 30vw;
+    }
+}
+
+@media only screen and (min-width: 995px) {
+    /* navbar */
+    /* Changement de position des éléments de liens sociaux pour la version desktop */
+    .custom-links {
+        position: absolute;
+        bottom: 5%; /* Ajuste en fonction de l'emplacement exact souhaité */
+        right: 0%;
+        display: flex;  
+    }
+
+    .custom-link-1, .custom-link-2, .custom-link-3, .custom-link-4, .custom-link-5 {
+        display: inline-block !important; /* Assure que les liens sont affichés */
+        position: relative; /* Positionnement relatif dans leur conteneur .custom-links */
+        text-decoration: none;
+        color: rgb(26, 31, 66);
+    }
+
+    .custom-link-1 {
+        right: 24vw;
+    }
+
+    .custom-link-2 {
+        right: 19vw;
+    }
+
+    .custom-link-3 {
+        right: 13.5vw;
+    }
+    .custom-link-4 {
+        right: 8vw;
+    }
+    .custom-link-5 {
+        right: 3vw;
+    }
+
+    .custom-position-shema-e {
+        top: 34.5vw;
+        left: 30vw;
+    }
+
+    .title-font-size-xl {
+        font-size: 117%;
+    }
+}
+
+@media only screen and (min-width: 1215px) {
+    /* navbar */
+    /* Changement de position des éléments de liens sociaux pour la version desktop */
+    .custom-links {
+        position: absolute;
+        bottom: 5%; /* Ajuste en fonction de l'emplacement exact souhaité */
+        right: 0%;
+        display: flex;  
+    }
+
+    .custom-link-1, .custom-link-2, .custom-link-3, .custom-link-4, .custom-link-5 {
+        display: inline-block !important; /* Assure que les liens sont affichés */
+        position: relative; /* Positionnement relatif dans leur conteneur .custom-links */
+        text-decoration: none;
+        color: rgb(26, 31, 66);
+    }
+
+    .custom-link-1 {
+        right: 30vw;
+    }
+
+    .custom-link-2 {
+        right: 23vw;
+    }
+
+    .custom-link-3 {
+        right: 16.5vw;
+    }
+    .custom-link-4 {
+        right: 9.5vw;
+    }
+    .custom-link-5 {
+        right: 3vw;
+    }
+
+    .mt-custom-font {
+        font-size: 112.5%;
+    }
+
+    .custom-afont-size {
+        font-size: 112.5%;
+    }
+
+    .custom-position-shema-e {
+        top: 27.5vw;
+        left: 38.5vw;
+    }
+
+    .title-font-size-xxl {
+        font-size: 170%;
+    }
+
+    .title-font-size-xl {
+        font-size: 127%;
+    }
+
+}
+
+@media only screen and (min-width: 1500px) {
+    /* navbar */
+    /* Changement de position des éléments de liens sociaux pour la version desktop */
+
+    .custom-links {
+        position: absolute;
+        bottom: 5%; /* Ajuste en fonction de l'emplacement exact souhaité */
+        right: 0%;
+        display: flex;  
+    }
+
+    .custom-link-1, .custom-link-2, .custom-link-3, .custom-link-4, .custom-link-5 {
+        display: inline-block !important; /* Assure que les liens sont affichés */
+        position: relative; /* Positionnement relatif dans leur conteneur .custom-links */
+        text-decoration: none;
+        color: rgb(26, 31, 66);
+    }
+
+    .custom-link-1 {
+        right: 34.5vw;
+    }
+
+    .custom-link-2 {
+        right: 26vw;
+    }
+
+    .custom-link-3 {
+        right: 18vw;
+    }
+    .custom-link-4 {
+        right: 10vw;
+    }
+    .custom-link-5 {
+        right: 3vw;
+    }
+
+    .col-md-custom {
+        margin-left: 54.2%;
+    }
+
+    .mt-custom-font {
+        font-size: 125%;
+    }
+
+    .custom-afont-size {
+        font-size: 125%;
+    }
+
+    .custom-position-shema-e {
+        top: 31.5vw;
+        left: 40vw;
+    }
+
+    .title-font-size-xxl {
+        font-size: 200%;
+    }
+
+    .title-font-size-xl {
+        font-size: 137%;
+    }
+
+}
+
+@media only screen and (min-width: 1665px) {
+    /* navbar */
+    /* Changement de position des éléments de liens sociaux pour la version desktop */
+
+    .custom-links {
+        position: absolute;
+        bottom: 5%; /* Ajuste en fonction de l'emplacement exact souhaité */
+        right: 0%;
+        display: flex;  
+    }
+
+    .custom-link-1, .custom-link-2, .custom-link-3, .custom-link-4, .custom-link-5 {
+        display: inline-block !important; /* Assure que les liens sont affichés */
+        position: relative; /* Positionnement relatif dans leur conteneur .custom-links */
+        text-decoration: none;
+        color: rgb(26, 31, 66);
+    }
+
+    .custom-link-1 {
+        right: 38vw;
+    }
+
+    .custom-link-2 {
+        right: 30vw;
+    }
+
+    .custom-link-3 {
+        right: 21vw;
+    }
+    .custom-link-4 {
+        right: 11vw;
+    }
+    .custom-link-5 {
+        right: 3vw;
+    }
+    
+    .title-font-size-xl {
+        font-size: 147%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .col-md-custom {
+        margin-left: 54.4%;
+    }
+
+    .title-font-size-xl {
+        font-size: 157%;
+    }
+}

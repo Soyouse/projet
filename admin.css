@@ -1,0 +1,6 @@
+td {
+  max-width: 150px; /* Limiter la largeur maximale des cellules pour le texte */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
